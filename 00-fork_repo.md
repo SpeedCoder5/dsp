@@ -49,8 +49,7 @@ Here's your first chance to practice this:
 
 What is your favorite [emoji](http://www.emoji-cheat-sheet.com/)?
 
->> :wink: ;) wink wink nudge nudge know what I mean know what I mean ;) 
-
+:wink: ;) wink wink nudge nudge know what I mean know what I mean ;) 
 
 
 
