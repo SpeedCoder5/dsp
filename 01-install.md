@@ -37,10 +37,11 @@ import sklearn
 
 Did you install Python 2 or 3? Why? How can you check the version of Python installed if you happen to be on an unfamiliar computer?
 
-From the terminal type:
-    python -V
-Look for a response like:
-    Python 3.5.0 :: Anaconda 2.4.0 (64-bit)
+    From the terminal type:
+        python -V
+    Look for a response like:
+        Python 3.5.0 :: Anaconda 2.4.0 (64-bit)
+    which is what I installed on my computer.
 
 
 ---
