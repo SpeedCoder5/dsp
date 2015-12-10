@@ -12,7 +12,7 @@ these in a couple of hours.
 
 Make a cheat sheet for yourself: a list of at least **ten** commands and what they do, focused on things that are new, interesting, or otherwise worth remembering.
 
-
+    >>
     pwd - print working directory 
     hostname - my computer's network name 
     mkdir - make directory
@@ -55,6 +55,7 @@ Make a cheat sheet for yourself: a list of at least **ten** commands and what th
 
 What does `ls` do? What do `ls -a`, `ls -l`, and `ls -lh` do? What combinations of those flags are meaningful?
 
+    >>
     ls shows a list of what is in current directory
     ls -a shows all the files in the directory, including .
     ls -l uses the long listing format 
@@ -69,6 +70,7 @@ What does `ls` do? What do `ls -a`, `ls -l`, and `ls -lh` do? What combinations 
 
 What does `xargs` do? Give an example of how to use it.
 
+    >>
     xargs assists in building a command line and executing it.
     xargs is typically be used by piping long lists to it.
     example: - replace "old" with "young" in text files in dir
