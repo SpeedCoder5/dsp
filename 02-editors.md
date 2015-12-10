@@ -31,10 +31,11 @@ Both Emacs and vim have built-in interactive tutorials that you can try.
 
 What terminal editor will you use? How did you make your decision?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
-
+I decided to use vim because I am tired of it starting and me not having any clue I am in it.
+Thank you for the tip.  http://openvim.com/tutorial.html now has me laughing at the old Unix programmers that invented vi
+instead of them having the laugh on me.
+:wink: nudge nudge
 ---
-
 
 ### Graphical Editor
 
@@ -61,6 +62,6 @@ We will also use Jupyter (IPython) notebooks, but this does not remove the need 
 
 What graphical editor will you use? How did you make your decision? What are some interesting features of your editor? What are some useful keyboard shortcuts for your editor? How do you customize your editor?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+PyCharm.  It is the cat's meow.  The pro version is also supposed to provide and IDE for javascript.
 
 ---
