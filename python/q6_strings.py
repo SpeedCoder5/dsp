@@ -18,8 +18,10 @@ def donuts(count):
     >>> donuts(99)
     'Number of donuts: many'
     """
-    raise NotImplementedError
-
+    sr = 'Number of donuts: '
+    if(count < 10): sr += str(count)
+    else: sr += 'many'
+    return sr
 
 def both_ends(s):
     """
@@ -37,12 +39,13 @@ def both_ends(s):
     >>> both_ends('xyz')
     'xyyz'
     """
-    raise NotImplementedError
-
+    sr = ''
+    if len(s) > 2: sr = s[:2] + s[-2:]
+    return sr
 
 def fix_start(s):
     """
-    Given a string s, return a string where all occurences of its
+    Given a string s, return a string where all occurrences of its
     first char have been changed to '*', except do not change the
     first char itself. e.g. 'babble' yields 'ba**le' Assume that the
     string is length 1 or more.
@@ -56,8 +59,9 @@ def fix_start(s):
     >>> fix_start('donut')
     'donut'
     """
-    raise NotImplementedError
-
+    ch = s[0]
+    lst = [x if x!=ch else '*' for x in s[1:]]
+    return ch + ''.join(lst)
 
 def mix_up(a, b):
     """
@@ -74,7 +78,7 @@ def mix_up(a, b):
     >>> mix_up('pezzy', 'firm')
     'fizzy perm'
     """
-    raise NotImplementedError
+    return b[0:2] + a[2:] + ' ' + a[0:2] + b[2:]
 
 
 def verbing(s):
@@ -91,8 +95,11 @@ def verbing(s):
     >>> verbing('do')
     'do'
     """
-    raise NotImplementedError
-
+    sr = s
+    if len(s) >= 3:
+        if s.endswith('ing'): sr = s + 'ly'
+        else: sr = s + 'ing'
+    return sr
 
 def not_bad(s):
     """
@@ -111,8 +118,11 @@ def not_bad(s):
     >>> not_bad("It's bad yet not")
     "It's bad yet not"
     """
-    raise NotImplementedError
-
+    sr = s
+    noti = s.find('not')
+    badi = s.find('bad')
+    if noti > 0 and badi > noti: sr = s[:noti] + 'good' + s[badi+3:]
+    return sr
 
 def front_back(a, b):
     """
@@ -130,4 +140,6 @@ def front_back(a, b):
     >>> front_back('Kitten', 'Donut')
     'KitDontenut'
     """
-    raise NotImplementedError
+    ccha = len(a) / 2 + len(a) % 2
+    cchb = len(b) / 2 + len(b) % 2
+    return a[:ccha] + b[:cchb] + a[ccha:] + b[cchb:]

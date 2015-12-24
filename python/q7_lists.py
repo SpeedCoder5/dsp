@@ -1,7 +1,6 @@
 # Based on materials copyright 2010 Google Inc.
 # Licensed under the Apache License, Version 2.0
 
-
 def match_ends(words):
     """
     Given a list of strings, return the count of the number of strings
@@ -15,8 +14,15 @@ def match_ends(words):
     >>> match_ends(['aaa', 'be', 'abc', 'hello'])
     1
     """
-    raise NotImplementedError
-
+    # reduce question:
+    # why does the lambda in following reduce method throw:
+    #     TypeError: <lambda>() takes exactly 1 argument (2 given)
+    # from functools import reduce
+    # return reduce((lambda w: (1 if (len(w) > 1 and w[0] == w[-1]) else 0)), words, 0)
+    cm = 0
+    for w in words:
+        if len(w) > 1 and w[0] == w[-1]: cm += 1
+    return cm
 
 def front_x(words):
     """
@@ -32,8 +38,11 @@ def front_x(words):
     >>> front_x(['mix', 'xyz', 'apple', 'xanadu', 'aardvark'])
     ['xanadu', 'xyz', 'aardvark', 'apple', 'mix']
     """
-    raise NotImplementedError
-
+    lstx = [w for w in words if 'x' == w[0]]
+    lstn = [w for w in words if 'x' != w[0]]
+    lstx.sort()
+    lstn.sort()
+    return lstx + lstn
 
 def sort_last(tuples):
     """
@@ -49,7 +58,7 @@ def sort_last(tuples):
     >>> sort_last([(1, 7), (1, 3), (3, 4, 5), (2, 2)])
     [(2, 2), (1, 3), (3, 4, 5), (1, 7)]
     """
-    raise NotImplementedError
+    return sorted(tuples, key=lambda x: x[1])
 
 
 def remove_adjacent(nums):
@@ -68,8 +77,14 @@ def remove_adjacent(nums):
     >>> remove_adjacent([])
     []
     """
-    raise NotImplementedError
-
+    lr = []
+    i = 0
+    ch = None
+    while i < len(nums):
+        if nums[i] != ch: lr.append(nums[i])
+        ch = nums[i]
+        i += 1
+    return lr
 
 def linear_merge(list1, list2):
     """
@@ -85,4 +100,7 @@ def linear_merge(list1, list2):
     >>> linear_merge(['aa', 'aa'], ['aa', 'bb', 'bb'])
     ['aa', 'aa', 'aa', 'bb', 'bb']
     """
-    raise NotImplementedError
+    import itertools
+    ml = itertools.chain(list1, list2)
+    lr = sorted(ml)
+    return lr
