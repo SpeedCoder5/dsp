@@ -19,7 +19,7 @@
 
 import csv
 
-csvFilename = 'football.csv'm
+csvFilename = 'football.csv'
 hdrTeam = 'Team'
 hdrGoals = 'Goals'
 hdrAllowed = 'Goals Allowed'
