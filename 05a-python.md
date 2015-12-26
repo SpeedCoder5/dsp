@@ -12,8 +12,8 @@ For quick and easy interactive practice with Python, many people enjoy [Codecade
 
 How are Python lists and tuples similar and different? Which will work as keys in dictionaries? Why?
 
-    >> Both lists and tuples are zero-based-indexed sequences.
-    Elements in both can be accessed via indexing, slicing, and checking for membership.
+    >> Both lists and tuples are zero-based-indexed sequences of items.
+    Items in both can be accessed via indexing, slicing, and checking for membership.
      
     A tuple is a immutable sequence -- whereas items in and the sequence of a list are mutable.
     An inline explicit initializer of a list is bracketed by square brackets [], i.e.
@@ -24,11 +24,22 @@ How are Python lists and tuples similar and different? Which will work as keys i
     
         tup = ('a', 'b')
         
-    or initialized as a string.  Strings in Python are also immutable.
-    
-        tup = 'ab'
-    
     A tuple can work as a key in a dictionary.  Dictionary keys are immutable.
+    
+    There are also other types of collections in Python.
+    
+    Strings are immutable. Literals are initialized bracketed with ' or ".
+    
+        str = 'ab'
+        str = "ab"
+    
+    A set is a collection of unique items.  Literals are are bracketed by {}.
+    
+        set = {'a', 'b'}
+        
+    A dictionary is a collection of pairs each with a unique key.  ':' is added to set literal notation.
+    
+        dict = {'a':'A', 'b':'B'}
 
 ---
 
@@ -96,7 +107,7 @@ Example:
 Describe Python's `lambda`. What is it, and what is it used for? Give at least one example, including an example of using a `lambda` in the `key` argument to `sorted`.
 
 >> A  *lambda* expression is an anonymous function that can be defined locally and passed to or returned from a function.<br/>
-Lambda expressions are a tool which aids conciseness in *functional programming*.<br/>
+Lambda expressions are tools that aid conciseness in *functional programming*.<br/>
 <br/>
 Functional programming is a declarative programming model that favors mathematical transformation of arguments to results.<br/>
 It differs from imperative programming which favors state change based on commands in the source language.<br/>

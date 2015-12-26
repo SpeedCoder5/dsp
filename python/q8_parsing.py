@@ -20,30 +20,14 @@
 import csv
 
 csvFilename = 'football.csv'
-hdrTeam = 'Team'
-hdrGoals = 'Goals'
-hdrAllowed = 'Goals Allowed'
-ndxTeam = None
-ndxGoals = None
-ndxAllowed = None
-
-isHeaderRead = False
 minDeltaGoals = float("inf")
 minDeltaTeam = ''
 
 with open(csvFilename) as fin:
-    rdr = csv.reader(fin)
-    for row in rdr:
-        if not isHeaderRead :
-            ndxTeam = row.index(hdrTeam)
-            ndxGoals = row.index(hdrGoals)
-            ndxAllowed = row.index(hdrAllowed)
-            isHeaderRead = True
-        else:
-            goals = int(row[ndxGoals])
-            allowed =  int(row[ndxAllowed])
-            deltaGoals = abs(goals - allowed)
-            if deltaGoals < minDeltaGoals:
-                minDeltaGoals = deltaGoals
-                minDeltaTeam = row[ndxTeam]
+    drdr = csv.DictReader(fin)
+    for row in drdr:
+        deltaGoals = abs(int(row['Goals']) - int(row['Goals Allowed']))
+        if deltaGoals < minDeltaGoals:
+            minDeltaGoals = deltaGoals
+            minDeltaTeam = row['Team']
 print "%s had the smallest difference with of %d between 'for' and 'against' goals." % (minDeltaTeam, minDeltaGoals)
