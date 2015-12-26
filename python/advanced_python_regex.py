@@ -19,18 +19,18 @@ with open(csvFilename) as fin:
         ed = email.split('@')
         domains.add(ed[1])
 
-print "Q1. There are %d different degrees with frequenices:" % len(ddeg)
+print "Q1. There are %d different degrees with frequenices:<br/>" % len(ddeg)
 for key, value in ddeg.iteritems():
-    print key, ':', value
+    print key, ':', value, '<br/>'
 
-print "Q2. There are %d different titles with frequenices:" % len(dtitle)
+print "Q2. There are %d different titles with frequenices:<br/>" % len(dtitle)
 for key, value in dtitle.iteritems():
-    print key, ':', value
+    print key, ':', value, '<br/>'
 
-print "Q3. Email addreses are:"
+print "Q3. Email addreses are:<br/>"
 for email in emails:
-    print email
+    print email, '<br/>'
 
-print "Q4. There are %d different email domains:" % len(domains)
+print "Q4. There are %d different email domains:<br/>" % len(domains)
 for value in domains:
-    print value
+    print value, '<br/>'
