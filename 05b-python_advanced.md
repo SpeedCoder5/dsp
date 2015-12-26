@@ -78,11 +78,7 @@ rxiao@mail.med.upenn.edu <br/>
 sxie@mail.med.upenn.edu <br/>
 dxie@upenn.edu <br/>
 weiyang@mail.med.upenn.edu <br/>
-Q4. There are 4 different email domains:<br/>
-email.chop.edu <br/>
-upenn.edu <br/>
-cceb.med.upenn.edu <br/>
-mail.med.upenn.edu <br/>
+
 
 ####Q4. Find how many different email domains there are (Ex:  mail.med.upenn.edu, upenn.edu, email.chop.edu, etc.).  Print the list of unique email domains.
 
