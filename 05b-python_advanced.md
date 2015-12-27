@@ -126,7 +126,11 @@ faculty_dict = { 'Ellenberg': [\
 ```
 Print the first 3 key and value pairs of the dictionary:
 
->> REPLACE THIS WITH YOUR RESPONSE
+>> A6. the first 3 items in faculty_dict are:<br/>
+Putt : ['PhD ScD', 'Professor of Biostatistics', 'mputt@mail.med.upenn.edu'] <br/>
+Feng : ['PhD', 'Assistant Professor of Biostatistics', 'ruifeng@upenn.edu'] <br/>
+Bilker : ['PhD', 'Professor of Biostatistics', 'warren@upenn.edu'] <br/>
+
 
 ####Q7.  The previous dictionary does not have the best design for keys.  Create a new dictionary with keys as:
 
@@ -141,11 +145,17 @@ professor_dict = {('Susan', 'Ellenberg'): ['Ph.D.', 'Professor', 'sellenbe@upenn
 
 Print the first 3 key and value pairs of the dictionary:
 
->> REPLACE THIS WITH YOUR RESPONSE
+>> A7. the first 3 items in professor_dict are:<br/>
+('Yimei', 'Li') : ['PhD', 'Assistant Professor of Biostatistics', 'liy3@email.chop.edu'] <br/>
+('Hongzhe', 'Li') : ['PhD', 'Professor of Biostatistics', 'hongzhe@upenn.edu'] <br/>
+('Justine', 'Shults') : ['PhD', 'Professor of Biostatistics', 'jshults@mail.med.upenn.edu'] <br/>
 
 ####Q8.  It looks like the current dictionary is printing by first name.  Sort by last name and print the first 3 key and value pairs.  
 
->> REPLACE THIS WITH YOUR RESPONSE
+>> A8. the first 3 items in sorted_pairs are:<br/>
+('Scarlett', 'Bellamy') : ['ScD', 'Associate Professor of Biostatistics', 'bellamys@mail.med.upenn.edu'] <br/>
+('Warren', 'Bilker') : ['PhD', 'Professor of Biostatistics', 'warren@upenn.edu'] <br/>
+('Matthew', 'Bryan') : ['PhD', 'Assistant Professor of Biostatistics', 'bryanma@upenn.edu'] <br/>
 
 Place your code in this file: [advanced_python_dict.py](python/advanced_python_dict.py)
 
