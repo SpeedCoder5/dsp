@@ -45,6 +45,7 @@ Make a cheat sheet for yourself: a list of at least **ten** commands and what th
     chmod - change permission modifiers
     chown - change ownership 
     sed - linux stream editor
+    lsb_release -a - returns Ubuntu version
     Additionally an advance bash-scripting guide is available here:
     [http://tldp.org/LDP/abs/html](http://tldp.org/LDP/abs/html)
 
