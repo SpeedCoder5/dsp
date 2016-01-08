@@ -2,10 +2,12 @@
 
 Using data from the NSFG, make a scatter plot of birth weight versus mother’s age. Plot percentiles of birth weight versus mother’s age. Compute Pearson’s and Spearman’s correlations. How would you characterize the relationship between these variables?
 
->> nsfg totalwgt_lb vs agepreg<br/>
-correlations:<br/>
-- Pearson: 0.624978<br/>
-- Spearman: 0.582866<br/>
+>> There is a slight correlation with birthweight and mother's age with older mothers having slightly heavier babies.
+ 
+    nsfg totalwgt_lb vs agepreg
+    correlations:
+    - Pearson: 0.624978
+    - Spearman: 0.582866
 
 ![chap07ex1scatter](chap07ex1scatter.png)<br/>
 ![chap07ex1BinPct](chap07ex1BinPct.png)
